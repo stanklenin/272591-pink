@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Кленин](https://up.htmlacademy.ru/adaptive/11/user/272591).
-* Наставник: `Неизвестно`.
+* Наставник: [Гоша Егорян] (https://up.htmlacademy.ru/htmlcss/16/user/85633).
 
 ---
 
