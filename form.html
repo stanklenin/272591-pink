@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1><!--скрыт-->
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <a href="index.html"><img src="http://placehold.it/150x100" alt="logo"></a>
+        </div>
+        <span class="main-nav__toggler"></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <h2 class="page-header__desc">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </header>
+    <section class="content">
+      <form class="content__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="content__form-desc">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашк бонусную карту! Пожалуйста, заполните форму нижу:</p>
+        <fieldset class="content__form-inner content__form-inner--initials">
+          <label class="field-text">Фамилия
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="field-text">Имя
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="field-text">Отчество
+            <input class="field-text__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <fieldset class="content__form-inner content__form-inner--grey">
+          <legend class="field-name">Ваши безбашенные достижения в путешествии</legend>
+          <label class="field-checkbox">Сделал селфи с акулой
+            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+          </label>
+          <label class="field-checkbox">Обгорел на пляже
+            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+          </label>
+          <label class="field-checkbox">Видел Чака Норриса
+            <input class="field-checkbox__input" type="checkbox" name="achievements">
+          </label>
+          <label class="field-checkbox">Накупил сувениров
+            <input class="field-checkbox__input" type="checkbox" name="achievements">
+          </label>
+          <label class="field-checkbox">Удержал башню
+            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+          </label>
+          <label class="field-checkbox">Разгромил отель
+            <input class="field-checkbox__input" type="checkbox" name="achievements">
+          </label>
+        </fieldset>
+        <fieldset class="content__form-inner">
+          <label class="field-text">Номер телефона
+            <input class="field-text__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="field-text">Адрес почты
+            <input class="field-text__input" type="email" name="mail" placeholder="Введите почту *">
+          </label>
+        </fieldset>
+        <fieldset class="content__form-inner content__form-inner--grey">
+          <legend class="field-name">С каким приложением путешествовали?</legend>
+          <label class="field-radio">Pink для iOS
+            <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
+          </label>
+          <label class="field-radio">Pink для Android
+            <input class="field-radio__input" type="radio" name="os" value="android">
+          </label>
+          <label class="field-radio">Windows Phone
+            <input class="field-radio__input" type="radio" name="os" value="windows">
+          </label>
+        </fieldset>
+        <fieldset class="content__form-inner">
+          <legend class="field-name">Опишите свои эмоции</legend>
+          <label class="field-text field-text--wide">
+            <textarea class="field-text__input" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </fieldset>
+        <button class="content__form-btn btn">Отправить форму</button>
+        <p class="content__form-footnote">* - обязательные для заполнения поля</p>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="index.html"><img src="http://placehold.it/150x100" alt="logo"></a>
+        </div>
+        <div class="page-footer__social">
+          <a class="social-link social-link--tw" href="#">Twitter</a>
+          <a class="social-link social-link--fb" href="#">Facebook</a>
+          <a class="social-link social-link--vk" href="#">Вконтакте</a>
+        </div>
+        <div class="page-footer__copyright">
+          <span>Разработано</span>
+          <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
