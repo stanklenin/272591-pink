@@ -3,37 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Pink</h1><!--скрыт-->
+      <h1 class="page-header__title hidden">Pink</h1><!--скрыт-->
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <a href="index.html"><img src="http://placehold.it/150x100" alt="logo"></a>
+          <a href="index.html"><img src="../272591-pink/img/logo-pink-white-mobile.svg" alt="logo"></a>
+          <span class="main-nav__toggler"></span>
         </div>
-        <span class="main-nav__toggler"></span>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
           <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
       <div class="page-header__img">
-        <img src="http://placehold.it/150x100" alt="phone">
+        <img src="../272591-pink/img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="phone">
       </div>
       <div class="page-header__download">
         <a class="page-header__download-btn btn" href="#">Скачать приложение</a>
         <ul class="page-header__os-list">
-          <li class="page-header__os-item"><a href="#">iOS</a></li>
-          <li class="page-header__os-item"><a href="#">Android</a></li>
-          <li class="page-header__os-item"><a href="#">Windows Phone</a></li>
+          <li class="page-header__os-item page-header__os-item--ios"><a class="page-header__os-link page-header__os-link--ios" href="#">iOS</a></li>
+          <li class="page-header__os-item page-header__os-item--android"><a class="page-header__os-link page-header__os-link--android" href="#">Android</a></li>
+          <li class="page-header__os-item page-header__os-item--windows"><a class="page-header__os-link page-header__os-link--windows" href="#">Windows Phone</a></li>
         </ul>
         <p class="page-header__footnote">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <section class="advantages">
-      <h2 class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+      <h2 class="advantages__slogan">Устали от серости мегаполиса?</h2>
+      <h2 class="advantages__slogan">Нам есть, что вам предложить!</h2>
       <div class="advantages__list-wrapper">
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -50,7 +52,7 @@
           </li>
         </ul>
         <div class="advantages__img">
-          <img src="http://placehold.it/150x100" alt="phone">
+          <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="phone">
         </div>
       </div>
     </section>
@@ -59,7 +61,7 @@
         <div class="reviews__slider-wrapper slider">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
         <div class="reviews__pagination slider__pagination">
@@ -74,9 +76,9 @@
         <div class="price__slider-wrapper slider">
           <table class="price__table">
             <tr>
-              <th class="price__table-title slider__item">База<br> 1.99 USD</th>
-              <th class="price__table-title slider__item hit">Стандарт<br> 3.99 USD</th>
-              <th class="price__table-title slider__item">Анлим<br> 9.99 USD</th>
+              <th class="price__table-title slider__item">База<br> <span>1.99 USD</span></th>
+              <th class="price__table-title slider__item hit">Стандарт<br> <span>3.99 USD</span></th>
+              <th class="price__table-title slider__item">Анлим<br> <span>9.99 USD</span></th>
             </tr>
             <tr>
               <td>Розовый фильтр<span class="includes"></span></td>
@@ -107,20 +109,20 @@
         <h2 class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__info">
           <div class="contacts__phone">
-            <b>Звоните:</b>
+            <b>Звоните:</b><br>
             <span>+7 (812) 555-66-66</span>
           </div>
           <div class="contacts__mail">
-            <b>Пишите:</b>
+            <b>Пишите:</b><br>
             <span>mail@htmlacademy.ru</span>
           </div>
           <div class="contacts__address">
-            <b>Приезжайте в гости:</b>
+            <b>Приезжайте в гости:</b><br>
             <span>ул. Большая Конюшенная, 19/8</span>
           </div>
         </div>
         <div class="contacts__map">
-          <img src="http://placehold.it/150x100" alt="map">
+          <img src="../272591-pink/img/bg-map-mobile@1x.png" width="320px" height="421px" alt="map">
         </div>
       </div>
     </section>
