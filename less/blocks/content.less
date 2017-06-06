@@ -1,0 +1,214 @@
+.content {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
+.content__form-desc {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0 20px;
+  padding-top: 45px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 30px;
+  color: @darkblue;
+  text-align: center;
+}
+.content__desc {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  padding-top: 45px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 30px;
+  color: @darkblue;
+  text-align: center;
+}
+.content__form-inner {
+  border: none;
+  width: 280px;
+  padding: 0 20px;
+  .field-text {
+    span {
+      margin-left: 20px;
+      font-family: @main-font;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: @red;
+    }
+  }
+}
+.field-text__input {
+  margin-top: 5px;
+  margin-bottom: 19px;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 85px;
+  padding-bottom: 21px;
+}
+.field-text__input--last {
+  margin-bottom: 22px;
+}
+.content__form-inner--grey {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin-bottom: 32px;
+  background-color: #f2f2f2;
+}
+.field-name {
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @red;
+}
+.field-name--checkbox {
+  transform: translateY(57px);
+  padding-left: 17px;
+  padding-right: 20px;
+}
+.field-checkbox {
+  margin-bottom: 52px;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: @darkblue;
+  &:first-of-type {
+    margin-top: 100px;
+  }
+  &:last-of-type {
+    margin-bottom: 46px;
+  }
+}
+.field-radio {
+  margin-top: 15px;
+  margin-bottom: 47px;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: @darkblue;
+  &:first-of-type {
+    margin-top: 100px;
+  }
+}
+.field-name--radio {
+  transform: translateY(59px);
+  padding-left: 17px;
+  padding-right: 20px;
+}
+.field-text--wide {
+  textarea {
+    margin-top: 15px;
+    margin-bottom: 44px;
+    padding-bottom: 11px;
+    resize: none;
+  }
+}
+.field-name--textarea {
+  padding-left: 17px;
+  padding-right: 20px;
+}
+.content__form-btn {
+  margin-left: 17px;
+  margin-bottom: 22px;
+  padding: 15px 46px;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @green;
+  cursor: pointer;
+}
+.content__form-footnote {
+  margin-left: 68px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 30px;
+  color: @darkblue;
+  text-transform: uppercase;
+  span {
+    color: @red;
+  }
+}
+.content__photo-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content__daily-photo {
+  .content__info {
+    margin: 0 20px;
+    margin-top: -4px;
+    padding-top: 17px;
+    margin-bottom: 21px;
+  }
+}
+.content__photo-item {
+  width: 280px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: -2px;
+  }
+  &:nth-child(6) {
+    margin-bottom: 21px;
+  }
+}
+.content__info {
+  margin-top: -4px;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+.content__author {
+  margin: 0;
+  margin-left: 17px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @darkblue;
+  span {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+.content__comment {
+  margin: 0;
+  margin-left: 17px;
+  margin-top: -1px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 24px;
+  color: @darkblue;
+}
+.content__like-btn {
+  display: inline-block;
+  margin-left: 16px;
+  width: 16px;
+  height: 14px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+.content__like {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 10px;
+  vertical-align: middle;
+  font-family: @main-font;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @red;
+}

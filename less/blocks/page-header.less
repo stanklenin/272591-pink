@@ -1,0 +1,130 @@
+.page-header {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  background-color: @darkblue;
+}
+.main-nav__logo {
+  position: relative;
+  padding: 20px;
+  height: 28px;
+  border-bottom: 1px solid #000000;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .main-nav__item {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #000000;
+    a {
+      font-family: @main-font;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
+.main-nav__toggler {
+  position: absolute;
+  left: 278px;
+  top: 21px;
+  display: block;
+  width: 24px;
+  height: 23px;
+  background-image: url(../img/icon-menu-cross.svg);
+}
+.page-header__desc {
+  display: inline-block;
+  width: 100%;
+  height: 171px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center 23%;
+  h1 {
+    margin-top: 27px;
+    padding: 0 40px;
+    font-family: @main-font;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+}
+.hidden {
+  display: none;
+}
+.page-header__img {
+  padding-top: 110px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 110%;
+}
+.page-header__download {
+  padding-top: 23px;
+  padding-bottom: 30px;
+}
+.page-header__download-btn {
+  margin: 0 20px;
+  padding: 13px 35px;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+.page-header__os-item {
+  display: inline-block;
+  list-style: none;
+}
+.page-header__os-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 17px;
+  margin-right: 11px;
+  margin-bottom: 7px;
+  vertical-align: bottom;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--ios {
+    width: 47px;
+    height: 57px;
+    background-image: url("../img/logo-apple.svg");
+  }
+  &--android {
+    margin-right: 17px;
+    width: 43px;
+    height: 48px;
+    background-image: url("../img/logo-android.svg");
+  }
+  &--windows {
+    width: 44px;
+    height: 42px;
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+.page-header__footnote {
+  margin: 0 20px;
+  text-align: center;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #ffffff;
+}
