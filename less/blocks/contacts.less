@@ -1,7 +1,7 @@
 .contacts {
   margin: 0 auto;
   padding: 0;
-  padding-top: 120px;
+  padding-top: 25px;
   width: 320px;
 }
 .contacts__slogan {
@@ -34,20 +34,121 @@
   }
 }
 .contacts__phone {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 .contacts__mail {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding-left: 5px;
 }
 .contacts__address {
   padding: 0 20px;
 }
 .contacts__map {
-  max-height: 203px;
+  height: 203px;
   text-align: center;
   overflow: hidden;
   img {
     transform: translateY(-120px);
+  }
+}
+@media (min-width: 660px) {
+  .contacts {
+    width: 660px;
+  }
+  .contacts__slogan {
+    margin-top: 89px;
+    padding: 0 50px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .contacts__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 67px;
+  }
+  .contacts__phone {
+    margin-right: 92px;
+    b {
+      line-height: 30px;
+    }
+  }
+  .contacts__mail {
+    b {
+      line-height: 30px;
+    }
+  }
+  .contacts__address {
+    margin-top: 17px;
+    margin-left: 134px;
+    padding-top: 0px;
+    max-width: 220px;
+    b {
+      line-height: 35px;
+    }
+  }
+  .contacts__map {
+    width: 660px;
+    height: 373px;
+    img {
+      width: 660px;
+      height: 373px;
+      transform: translateY(-20px);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    width: 1200px;
+  }
+  .contacts__slogan {
+    margin-top: 133px;
+    padding: 0 300px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .contacts__info {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  .contacts__phone {
+    order: -1;
+    margin-left: 177px;
+    margin-top: -10px;
+    b {
+      line-height: 73px;
+    }
+  }
+  .contacts__mail {
+    order: 2;
+    margin-top: -9px;
+    b {
+      line-height: 73px;
+    }
+  }
+  .contacts__address {
+    order: 1;
+    margin-left: -4px;
+    margin-top: -10px;
+    margin-right: 65px;
+    b {
+      line-height: 73px;
+    }
+    span {
+      margin-left: -7px;
+    }
+  }
+  .contacts__map {
+    margin-bottom: 75px;
+    width: 1200px;
+    height: 502px;
+    img {
+      width: 1200px;
+      height: 502px;
+      transform: translateY(20px);
+    }
   }
 }
