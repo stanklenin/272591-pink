@@ -20,39 +20,51 @@
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
-      <div class="page-header__img">
-        <img src="../272591-pink/img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="phone">
-      </div>
-      <div class="page-header__download">
-        <a class="page-header__download-btn btn" href="#">Скачать приложение</a>
-        <ul class="page-header__os-list">
-          <li class="page-header__os-item page-header__os-item--ios"><a class="page-header__os-link page-header__os-link--ios" href="#">iOS</a></li>
-          <li class="page-header__os-item page-header__os-item--android"><a class="page-header__os-link page-header__os-link--android" href="#">Android</a></li>
-          <li class="page-header__os-item page-header__os-item--windows"><a class="page-header__os-link page-header__os-link--windows" href="#">Windows Phone</a></li>
-        </ul>
-        <p class="page-header__footnote">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="page-header__wrapper">
+        <div class="page-header__img">
+          <img src="../272591-pink/img/iphone-hand-mobile@1x.png" width="258" height="286" alt="phone">
+        </div>
+        <div class="page-header__download">
+          <h2 class="page-header__download-title">Взгляните на жизнь иначе!</h2>
+          <a class="page-header__download-btn btn" href="#">Скачать приложение</a>
+          <ul class="page-header__os-list">
+            <li class="page-header__os-item page-header__os-item--ios"><a class="page-header__os-link page-header__os-link--ios" href="#">iOS</a></li>
+            <li class="page-header__os-item page-header__os-item--android"><a class="page-header__os-link page-header__os-link--android" href="#">Android</a></li>
+            <li class="page-header__os-item page-header__os-item--windows"><a class="page-header__os-link page-header__os-link--windows" href="#">Windows Phone</a></li>
+          </ul>
+          <p class="page-header__footnote">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </header>
     <section class="advantages">
       <h2 class="advantages__slogan">Устали от серости мегаполиса?</h2>
       <h2 class="advantages__slogan">Нам есть, что вам предложить!</h2>
       <div class="advantages__list-wrapper">
+        <div class="advantages__promo">
+          <img src="#" alt="clock" width="238" height="276">
+          <h2 class="advantages__promo-slogan"><span>Эффект</span> на 24 часа!</h2>
+          <p class="advantages__promo-desc">Британские ученые провели исследования и доказали, что положительный <span>эффект</span> от использования приложения <span>длится</span> целые сутки!</p>
+          <a class="advantages__promo-link" href="#">Узнать больше об исследовании</a>
+        </div>
         <ul class="advantages__list">
           <li class="advantages__item">
+            <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="186" height="382" alt="phone">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
+            <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="186" height="382" alt="phone">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
+            <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="186" height="382" alt="phone">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <div class="advantages__img">
-          <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="phone">
+          <img src="../272591-pink/img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
         </div>
       </div>
     </section>
@@ -61,14 +73,15 @@
         <div class="reviews__slider-wrapper slider">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            <p><span class="quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="quotes">»</span></p>
           </blockquote>
         </div>
-        <div class="reviews__pagination slider__pagination">
-          <span class="slider__pagination-item slider__pagination-item--active"></span>
-          <span class="slider__pagination-item"></span>
-          <span class="slider__pagination-item"></span>
-        </div>
+        <ul class="reviews__pagination slider__pagination-list">
+          <li class="slider__pagination-item slider__pagination-item--active"></li>
+          <li class="slider__pagination-item"></li>
+          <li class="slider__pagination-item"></li>
+        </ul>
       </div>
     </section>
     <section class="price">
@@ -76,32 +89,36 @@
         <div class="price__slider-wrapper slider">
           <table class="price__table">
             <tr>
+              <th class="price__table-title--first"></th>
               <th class="price__table-title slider__item">База<br> <span>1.99 USD</span></th>
               <th class="price__table-title slider__item hit">Стандарт<br> <span>3.99 USD</span></th>
               <th class="price__table-title slider__item">Анлим<br> <span>9.99 USD</span></th>
             </tr>
             <tr>
-              <td>Розовый фильтр<span class="includes"></span></td>
-              <td>Розовый фильтр<span class="includes"></span></td>
-              <td>Розовый фильтр<span class="includes"></span></td>
+              <td class="table-cell"><span>Розовый фильтр</span></td>
+              <td><span class="table-cell--hidden">Розовый фильтр</span><span class="includes"></span></td>
+              <td><span class="table-cell--hidden">Розовый фильтр</span><span class="includes"></span></td>
+              <td><span class="table-cell--hidden">Розовый фильтр</span><span class="includes"></span></td>
             </tr>
             <tr>
-              <td>Смайлики<span class="non-includes"></span></td>
-              <td>Смайлики<span class="includes"></span></td>
-              <td>Смайлики<span class="includes"></span></td>
+              <td class="table-cell"><span>Смайлики</span></td>
+              <td><span class="table-cell--hidden">Смайлики</span><span class="non-includes"></span></td>
+              <td><span class="table-cell--hidden">Смайлики</span><span class="includes"></span></td>
+              <td><span class="table-cell--hidden">Смайлики</span><span class="includes"></span></td>
             </tr>
             <tr>
-              <td>Комментарии<span class="non-includes"></span></td>
-              <td>Комментарии<span class="non-includes"></span></td>
-              <td>Комментарии<span class="includes"></span></td>
+              <td class="table-cell"><span>Комментарии</span></td>
+              <td><span class="table-cell--hidden">Комментарии</span><span class="non-includes"></span></td>
+              <td><span class="table-cell--hidden">Комментарии</span><span class="non-includes"></span></td>
+              <td><span class="table-cell--hidden">Комментарии</span><span class="includes"></span></td>
             </tr>
           </table>
         </div>
-        <div class="price__pagination slider__pagination">
-          <span class="slider__pagination-item"></span>
-          <span class="slider__pagination-item slider__pagination-item--active"></span>
-          <span class="slider__pagination-item"></span>
-        </div>
+        <ul class="price__pagination slider__pagination">
+          <li class="slider__pagination-item"></li>
+          <li class="slider__pagination-item slider__pagination-item--active"></li>
+          <li class="slider__pagination-item"></li>
+        </ul>
       </div>
     </section>
     <section class="contacts">
@@ -122,9 +139,25 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img src="../272591-pink/img/bg-map-mobile@1x.png" width="320px" height="421px" alt="map">
+          <img src="../272591-pink/img/bg-map-mobile@1x.png" width="320" height="421" alt="map">
         </div>
       </div>
     </section>
+    <footer class="page-footer page-footer--main">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="index.html"><img src="../272591-pink/img/logo-pink-blue-mobile.svg" alt="logo"></a>
+        </div>
+        <div class="page-footer__social">
+          <a class="social-link social-link--tw" href="#">Twitter</a>
+          <a class="social-link social-link--fb" href="#">Facebook</a>
+          <a class="social-link social-link--tube" href="#">Youtube</a>
+        </div>
+        <div class="page-footer__copyright">
+          <span>Разработано</span>
+          <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

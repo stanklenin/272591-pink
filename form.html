@@ -19,13 +19,13 @@
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
-      <div class="page-header__desc">
+      <div class="page-header__desc page-header__desc--wide">
         <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <section class="content">
       <form class="content__form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="content__form-desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="content__form-desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span>Пожалуйста, заполните форму ниже:</span></p>
         <fieldset class="content__form-inner content__form-inner--initials">
           <label class="field-text"><span>Фамилия</span>
             <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *">
@@ -39,44 +39,51 @@
         </fieldset>
         <fieldset class="content__form-inner content__form-inner--grey">
           <legend class="field-name field-name--checkbox">Ваши безбашенные достижения в путешествии</legend>
-          <label class="field-checkbox">Сделал селфи с акулой
-            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-          </label>
-          <label class="field-checkbox">Обгорел на пляже
-            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-          </label>
-          <label class="field-checkbox">Видел Чака Норриса
-            <input class="field-checkbox__input" type="checkbox" name="achievements">
-          </label>
-          <label class="field-checkbox">Накупил сувениров
-            <input class="field-checkbox__input" type="checkbox" name="achievements">
-          </label>
-          <label class="field-checkbox">Удержал башню
-            <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-          </label>
-          <label class="field-checkbox">Разгромил отель
-            <input class="field-checkbox__input" type="checkbox" name="achievements">
-          </label>
+          <div class="field-wrapper">
+            <label class="field-checkbox">Сделал селфи с акулой
+              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+            </label>
+            <label class="field-checkbox">Обгорел на пляже
+              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+            </label>
+            <label class="field-checkbox">Видел Чака Норриса
+              <input class="field-checkbox__input" type="checkbox" name="achievements">
+            </label>
+            <label class="field-checkbox">Накупил сувениров
+              <input class="field-checkbox__input" type="checkbox" name="achievements">
+            </label>
+            <label class="field-checkbox">Удержал башню
+              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
+            </label>
+            <label class="field-checkbox">Разгромил отель
+              <input class="field-checkbox__input" type="checkbox" name="achievements">
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="content__form-inner">
-          <label class="field-text"><span>Номер телефона</span>
-            <input class="field-text__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="field-text"><span>Адрес почты</span>
-            <input class="field-text__input field-text__input--last" type="email" name="mail" placeholder="Введите почту *">
-          </label>
+        <fieldset class="content__form-inner content__form-inner--contacts">
+          <legend class="field-name field-name--contacts">Контактная информация</legend>
+          <div class="field-wrapper">
+            <label class="field-text"><span>Номер телефона</span>
+              <input class="field-text__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="field-text"><span>Адрес почты</span>
+              <input class="field-text__input field-text__input--last" type="email" name="mail" placeholder="Введите почту *">
+            </label>
+          </div>
         </fieldset>
         <fieldset class="content__form-inner content__form-inner--grey">
           <legend class="field-name field-name--radio">С каким приложением путешествовали?</legend>
-          <label class="field-radio">Pink для iOS
-            <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
-          </label>
-          <label class="field-radio">Pink для Android
-            <input class="field-radio__input" type="radio" name="os" value="android">
-          </label>
-          <label class="field-radio">Windows Phone
-            <input class="field-radio__input" type="radio" name="os" value="windows">
-          </label>
+          <div class="field-wrapper">
+            <label class="field-radio">Pink для iOS
+              <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
+            </label>
+            <label class="field-radio">Pink на Android
+              <input class="field-radio__input" type="radio" name="os" value="android">
+            </label>
+            <label class="field-radio">Windows Phone
+              <input class="field-radio__input" type="radio" name="os" value="windows">
+            </label>
+          </div>
         </fieldset>
         <fieldset class="content__form-inner">
           <legend class="field-name field-name--textarea">Опишите свои эмоции</legend>
@@ -85,7 +92,7 @@
           </label>
         </fieldset>
         <button class="content__form-btn btn">Отправить форму</button>
-        <p class="content__form-footnote"><span>*</span> — обязательные поля</p>
+        <p class="content__form-footnote"><span>*</span> — обязательные <span class="hidden-text">для заполнения</span> поля</p>
       </form>
     </section>
     <footer class="page-footer">
