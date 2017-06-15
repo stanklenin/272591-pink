@@ -21,9 +21,9 @@
   }
 }
 .content__form-inner {
+  padding: 0 20px;
   border: none;
   width: 280px;
-  padding: 0 20px;
   .field-text {
     span {
       margin-left: 20px;
@@ -53,18 +53,20 @@
   }
 }
 .content__form-inner--contacts {
+  margin-bottom: 6px;
   .field-text__input {
+    margin-bottom: 16px;
     min-width: 170px;
   }
 }
 .field-text__input--last {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .content__form-inner--grey {
   width: 320px;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   background-color: #f2f2f2;
   .field-wrapper {
     display: flex;
@@ -396,14 +398,14 @@
     }
     .field-text__input {
       flex-grow: 0;
-      width: 100%;
       margin-top: 0px;
+      width: 100%;
       border: 2px solid #e5e5e5;
     }
   }
   .field-name--radio,
   .field-name--checkbox {
-    padding: 0;
+    padding: 0 22px;
     margin-bottom: -51px;
     transform: translateY(0);
   }
@@ -417,6 +419,7 @@
   }
   .field-name--contacts {
     display: block;
+    padding: 0 25px;
   }
   .content__form-inner--contacts {
     padding-top: 0px;
@@ -434,7 +437,7 @@
         }
       }
       &:last-of-type {
-        margin-top: 26px;
+        margin-top: 23px;
         .field-text__input {
           margin-bottom: 10px;
           border: 2px solid #e5e5e5;
@@ -460,8 +463,9 @@
     }
   }
   .content__form-btn {
-    padding: 15px 56px;
     margin-right: 72px;
+    margin-bottom: 65px;
+    padding: 15px 56px;
   }
   .content__form-footnote {
     align-self: flex-start;
@@ -590,29 +594,40 @@
     margin-top: 23px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: @desktop) {
   .content {
-    width: 1200px;
+    width: 100%;
+  }
+  .content__photo-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: @desktop;
   }
   .content__desc:first-child {
     margin-top: 93px;
     margin-bottom: 86px;
-    padding: 0 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 590px;
   }
   .content__daily-photo {
-    width: 1200px;
+    width: @desktop;
     img {
+      margin-left: -120px;
       width: 1200px;
       height: 506px;
     }
     .content__info {
-      margin-top: -4px;
-      margin-left: 130px;
-      margin-right: 130px;
+      margin-top: -6px;
+      margin-left: 10px;
+      margin-right: 10px;
       width: 900px;
       height: 94px;
       .content__author {
-        margin-left: -6px;
+        margin-top: 23px;
+        margin-left: -5px;
       }
       .content__comment {
         width: 900px;
@@ -625,18 +640,16 @@
     }
   }
   .content__photo-item {
+    margin-left: 0;
     margin-bottom: 53px;
     img {
       min-width: 300px;
       min-height: 400px;
     }
-    &:nth-last-of-type(3n) {
-      margin-left: 130px;
-    }
   }
   .content__desc:last-child {
     padding: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: -5px;
   }
   .content__form {
@@ -652,7 +665,7 @@
   }
   .content__form-inner--initials {
     margin: 0;
-    margin-top: 0px;
+    margin-top: 2px;
     width: 446px;
     .field-text {
       margin-bottom: 46px;
@@ -661,7 +674,7 @@
         padding: 0;
       }
       &:nth-child(2) {
-        margin-bottom: 48px;
+        margin-bottom: 43px;
       }
     }
     .field-text__input {
@@ -672,7 +685,7 @@
   .content__form-inner {
     min-width: 400px;
     &:nth-of-type(4) {
-      margin-top: 55px;
+      margin-top: 57px;
       margin-left: 69px;
       padding-left: 14px;
       padding-right: 17px;
@@ -712,6 +725,7 @@
   .content__form-inner--grey {
     &:nth-of-type(2) {
       width: 100%;
+      margin-top: -1px;
       margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 59px;
@@ -769,6 +783,7 @@
   }
   .content__form-btn {
     margin-left: 10px;
+    margin-bottom: 55px;
     padding: 15px 55px;
   }
   .content__form-footnote {
@@ -778,5 +793,17 @@
       display: inline;
       color: @darkblue;
     }
+  }
+}
+@media screen and (-moz-images-in-menus: 0) {
+  .content__form-inner {
+    position: relative;
+  }
+  .content__form-inner>.field-name {
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    background: white;
+    transform: translate(-50%, 0);
   }
 }

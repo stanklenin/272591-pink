@@ -5,7 +5,7 @@
   background-color: @darkblue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 80%;
+  background-position: center 49%;
 }
 .main-nav__logo {
   position: relative;
@@ -212,32 +212,34 @@
     width: 300px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: @desktop) {
   .page-header {
-    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .main-nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    border-bottom: 1px solid #000000;
+    margin: 0 auto;
+    width: @desktop;
   }
   .main-nav__logo {
     display: inline-block;
-    margin-left: 120px;
+    margin-left: 42px;
     border: none;
   }
   .main-nav__list {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-right: 120px;
     .main-nav__item {
       padding-top: 39px;
       display: inline-block;
       border: none;
       &:first-child {
-        margin-left: 165px;
+        margin-left: 118px;
         margin-right: 0;
       }
       &:last-child {
@@ -255,53 +257,55 @@
     display: none
   }
   .page-header__wrapper {
-    height: 745px;
+    width: @desktop;
+    height: 720px;
   }
   .page-header__download-title {
     margin-top: 87px;
-    margin-left: -619px;
+    margin-left: -500px;
     margin-bottom: 70px;
     font-size: 50px;
     line-height: 60px;
     width: 300px;
   }
   .page-header__download-btn {
-    margin-left: -619px;
+    margin-left: -500px;
     padding: 12px 29px;
     font-size: 21px;
   }
   .page-header__os-link {
     margin-top: 65px;
-    margin-left: -613px;
+    margin-left: -490px;
     &--android {
-      margin-left: -535px;
+      margin-left: -415px;
     }
     &--windows {
-      margin-left: -460px;
+      margin-left: -340px;
     }
   }
   .page-header__footnote {
     margin-top: 50px;
-    margin-left: -619px;
+    margin-left: -500px;
   }
   .page-header__img {
     img {
       top: 93px;
-      left: -725px;
+      left: -590px;
       width: 557px;
       height: 651px;
     }
   }
   .page-header__desc {
+    width: @desktop;
     height: 285px;
     h1 {
       margin-top: 66px;
-      margin-left: 386px;
+      margin-left: 265px;
       width: 350px;
     }
     &--wide {
       h1 {
-        margin-left: 160px;
+        margin-left: 40px;
         width: 800px;
       }
     }
