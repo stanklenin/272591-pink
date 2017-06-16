@@ -193,7 +193,23 @@
   flex-wrap: wrap;
 }
 .content__daily-photo {
+  position: relative;
   width: 320px;
+  .daily {
+    position: absolute;
+    top: 0;
+    left: 159px;
+    padding: 0 20px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    font-family: @main-font;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: @red;
+  }
   img {
     width: 320px;
     height: 137px;
@@ -481,6 +497,10 @@
   }
   .content__daily-photo {
     width: 660px;
+    .daily {
+      top: 58px;
+      left: 500px;
+    }
     img {
       width: 660px;
       height: 510px;
@@ -614,6 +634,10 @@
   }
   .content__daily-photo {
     width: @desktop;
+    .daily {
+      top: 55px;
+      left: 810px;
+    }
     img {
       margin-left: -120px;
       width: 1200px;
