@@ -5,9 +5,34 @@
   background-color: @darkblue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center 0%;
+}
+.page-header--large {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  background-color: @darkblue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: center 49%;
 }
+.page-header--small {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  background-color: @darkblue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 255px;
+}
 .main-nav__logo {
+  position: relative;
+  padding: 20px;
+  height: 28px;
+  border-bottom: 1px solid #000000;
+  background-color: rgba(29, 38, 49, 0.5);
+}
+.main-nav__logo--large {
   position: relative;
   padding: 20px;
   height: 28px;
@@ -47,6 +72,22 @@
 .main-nav__toggler {
   position: absolute;
   left: 278px;
+  top: 21px;
+  display: block;
+  fill: #ffffff;
+  stroke: #ffffff;
+  cursor: pointer;
+  &:hover {
+    fill: @red;
+    stroke: @red;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.main-nav__burger {
+  position: absolute;
+  left: 252px;
   top: 21px;
   display: block;
   fill: #ffffff;
@@ -163,6 +204,10 @@
     top: 45px;;
     left: 617px;;
   }
+  .main-nav__burger {
+    top: 40px;
+    left: 597px;
+  }
   .page-header__desc {
     height: 330px;
     background-size: 165%;
@@ -253,6 +298,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    background-color: rgba(29, 38, 49, 0.5);
     .main-nav__item {
       padding-top: 39px;
       display: inline-block;
@@ -295,6 +341,9 @@
   }
   .main-nav__toggler {
     display: none
+  }
+  .main-nav__burger {
+    display: none;
   }
   .page-header__wrapper {
     width: @desktop;
