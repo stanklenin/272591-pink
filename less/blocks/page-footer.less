@@ -40,6 +40,12 @@
     background-image: url("../img/icon-youtube.svg");
   }
 }
+.social-link:hover {
+  border-color: @darkblue;
+}
+.social-link:active {
+  opacity: 0.3;
+}
 .page-footer__copyright {
   position: relative;
   span {
@@ -53,16 +59,28 @@
   }
 }
 .page-footer__copyright-link {
-  position: absolute;
-  top: 15px;
-  left: 30px;
-  display: inline-block;
-  width: 42px;
-  height: 48px;
-  vertical-align: middle;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  svg {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    display: inline-block;
+    width: 42px;
+    height: 48px;
+    vertical-align: middle;
+    fill: @red;
+    stroke: @red;
+  }
+}
+.page-footer__copyright-link:hover {
+  svg {
+    fill: @darkblue;
+    stroke: @darkblue;
+  }
+}
+.page-footer__copyright-link:active {
+  svg {
+    opacity: 0.3;
+  }
 }
 @media (min-width: 660px) {
   .page-footer {
@@ -112,13 +130,14 @@
     margin-right: 270px;
   }
   .page-footer__copyright {
-    margin-top: 21px;
+    margin-top: 19px;
     span {
       font-size: 18px;
     }
   }
   .page-footer__copyright-link {
-    margin-top: 3px;
-    margin-left: 23px;
+    svg {
+      left: 52px;
+    }
   }
 }

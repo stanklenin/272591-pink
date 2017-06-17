@@ -5,7 +5,7 @@
 }
 .reviews__item {
   margin: 0;
-  padding-top: 42px;
+  padding-top: 38px;
   text-align: center;
   p {
     margin-top: 11px;
@@ -36,7 +36,21 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #bec2c7;
+  background-color: #7e868f;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--active {
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border: 3px solid @darkblue;
+  }
 }
 .reviews__pagination {
   margin-top: 30px;

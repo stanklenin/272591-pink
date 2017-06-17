@@ -1,7 +1,7 @@
 .advantages {
   margin: 0 auto;
   padding: 0;
-  padding-top: 38px;
+  padding-top: 42px;
   width: 320px;
 }
 .advantages__slogan {
@@ -18,8 +18,16 @@
   }
 }
 .advantages__list-wrapper {
+  position: relative;
   padding-top: 75px;
   background-color: #f2f2f2;
+  overflow: hidden;
+  svg {
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    width: 470px;
+  }
 }
 .advantages__promo {
   display: none;
@@ -82,6 +90,7 @@
 }
 @media (min-width: 660px) {
   .advantages {
+    padding-top: 37px;
     width: 660px;
   }
   .advantages__slogan {
@@ -102,6 +111,10 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding-top: 28px;
+    svg {
+      top: -13px;
+      width: 1000px;
+    }
   }
   .advantages__list {
     order: -1;
@@ -109,6 +122,7 @@
   }
   .advantages__img {
     order: 1;
+    z-index: 10;
     margin-left: 20px;
     width: 270px;
     max-height: 482px;
@@ -211,6 +225,10 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    svg {
+      top: 0;
+      width: 100%;
+    }
   }
   .advantages__list {
     margin-bottom: 0;
@@ -224,6 +242,12 @@
     display: inline-block;
     width: 270px;
     vertical-align: baseline;
+    .advantages__item-img {
+      position: relative;
+      z-index: 10;
+      height: 302px;
+      overflow: hidden;
+    }
     img {
       margin-bottom: -62px;
       margin-left: 25px;
@@ -247,7 +271,7 @@
       margin-right: 40px;
       padding: 12px 0;
       img {
-        margin-top: -10px;
+        margin-top: 0px;
         margin-left: 45px;
       }
       .advantages__item-title {

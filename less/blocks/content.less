@@ -45,6 +45,13 @@
   padding-left: 20px;
   padding-right: 85px;
   padding-bottom: 22px;
+  border: 2px solid #e5e5e5;
+}
+.field-text__input:hover {
+  border-color: @darkblue;
+}
+.field-text__input:focus {
+  border-color: @red;
 }
 .content__form-inner--initials {
   margin-bottom: 6px;
@@ -153,6 +160,12 @@
   color: #ffffff;
   background-color: @green;
   cursor: pointer;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .content__form-footnote {
   margin-left: 68px;
@@ -419,6 +432,12 @@
       border: 2px solid #e5e5e5;
     }
   }
+  .field-text__input:hover {
+    border-color: @darkblue;
+  }
+  .field-text__input:focus {
+    border-color: @red;
+  }
   .field-name--radio,
   .field-name--checkbox {
     padding: 0 22px;
@@ -459,6 +478,14 @@
           border: 2px solid #e5e5e5;
         }
       }
+      .field-text__input {
+        &:hover {
+          border-color: @darkblue;
+        }
+        &:focus {
+          border-color: @red;
+        }
+      }
     }
   }
   .field-checkbox {
@@ -476,6 +503,13 @@
       padding: 0;
       width: 497px;
       height: 190px;
+      border: 2px solid #e5e5e5;
+      &:hover {
+        border-color: @darkblue;
+      }
+      &:focus {
+        border-color: @red;
+      }
     }
   }
   .content__form-btn {

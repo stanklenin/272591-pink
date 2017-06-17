@@ -2,9 +2,16 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 116px;
+  position: relative;
   width: 320px;
   overflow: hidden;
   background-color: #f2f2f2;
+  svg {
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    width: 560px;
+  }
 }
 .price__table {
   border-collapse: collapse;
@@ -72,8 +79,12 @@
 }
 @media (min-width: 660px) {
   .price {
-    padding-top: 90px;
+    padding-top: 95px;
     width: 660px;
+    svg {
+      top: -18px;
+      width: 1000px;
+    }
   }
   .price__pagination {
     display: none;
@@ -125,6 +136,10 @@
 @media (min-width: @desktop) {
   .price {
     width: 100%;
+    svg {
+      top: 0;
+      width: 100%;
+    }
   }
   .price__table {
     margin: 0 auto;

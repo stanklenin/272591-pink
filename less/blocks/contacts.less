@@ -44,9 +44,18 @@
   padding: 0 20px;
 }
 .contacts__map {
+  position: relative;
   height: 203px;
   text-align: center;
   overflow: hidden;
+  svg {
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
   img {
     transform: translateY(-120px);
   }
@@ -91,6 +100,9 @@
   .contacts__map {
     width: 660px;
     height: 373px;
+    svg {
+      top: 0px;
+    }
     img {
       width: 660px;
       height: 373px;
@@ -149,6 +161,9 @@
     margin-bottom: 75px;
     width: 1200px;
     height: 502px;
+    svg {
+      top: 20px;
+    }
     img {
       width: 1200px;
       height: 502px;
