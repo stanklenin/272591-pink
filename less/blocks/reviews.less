@@ -59,8 +59,12 @@
     margin-right: 14px;
   }
 }
+.reviews__btn {
+  display: none;
+}
 @media (min-width: 660px) {
   .reviews {
+    position: relative;
     margin-bottom: -2px;
     padding-top: 6px;
     width: 660px;
@@ -115,5 +119,21 @@
   }
   .quotes {
     display: none;
+  }
+  .reviews__btn {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    border: none;
+    cursor: pointer;
+    &--left {
+      top: 195px;
+      left: 12px;
+    }
+    &--right {
+      top: 195px;
+      left: 928px;
+    }
   }
 }

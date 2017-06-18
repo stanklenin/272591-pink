@@ -59,24 +59,18 @@
         <fieldset class="content__form-inner content__form-inner--grey">
           <legend class="field-name field-name--checkbox">Ваши безбашенные достижения в путешествии</legend>
           <div class="field-wrapper">
-            <label class="field-checkbox">Сделал селфи с акулой
-              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-            </label>
-            <label class="field-checkbox">Обгорел на пляже
-              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-            </label>
-            <label class="field-checkbox">Видел Чака Норриса
-              <input class="field-checkbox__input" type="checkbox" name="achievements">
-            </label>
-            <label class="field-checkbox">Накупил сувениров
-              <input class="field-checkbox__input" type="checkbox" name="achievements">
-            </label>
-            <label class="field-checkbox">Удержал башню
-              <input class="field-checkbox__input" type="checkbox" name="achievements" checked>
-            </label>
-            <label class="field-checkbox">Разгромил отель
-              <input class="field-checkbox__input" type="checkbox" name="achievements">
-            </label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="selfie" checked>
+            <label for="selfie" class="field-checkbox">Сделал селфи с акулой</label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="beach" checked>
+            <label for="beach" class="field-checkbox">Обгорел на пляже</label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="chuck">
+            <label for="chuck" class="field-checkbox">Видел Чака Норриса</label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="souvenir">
+            <label for="souvenir" class="field-checkbox">Накупил сувениров</label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="tower" checked>
+            <label for="tower" class="field-checkbox">Удержал башню</label>
+            <input class="field-checkbox__input" type="checkbox" name="achievements" id="hotel">
+            <label for="hotel" class="field-checkbox">Разгромил отель</label>
           </div>
         </fieldset>
         <fieldset class="content__form-inner content__form-inner--contacts">
@@ -93,21 +87,18 @@
         <fieldset class="content__form-inner content__form-inner--grey">
           <legend class="field-name field-name--radio">С каким приложением путешествовали?</legend>
           <div class="field-wrapper">
-            <label class="field-radio">Pink для iOS
-              <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
-            </label>
-            <label class="field-radio">Pink на Android
-              <input class="field-radio__input" type="radio" name="os" value="android">
-            </label>
-            <label class="field-radio">Windows Phone
-              <input class="field-radio__input" type="radio" name="os" value="windows">
-            </label>
+            <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
+            <label for="ios" class="field-radio">Pink для iOS</label>
+            <input class="field-radio__input" type="radio" name="os" value="android" id="android">
+            <label for="android" class="field-radio">Pink на Android</label>
+            <input class="field-radio__input" type="radio" name="os" value="windows" id="windows">
+            <label for="windows" class="field-radio">Windows Phone</label>
           </div>
         </fieldset>
         <fieldset class="content__form-inner">
           <legend class="field-name field-name--textarea">Опишите свои эмоции</legend>
           <label class="field-text field-text--wide">
-            <textarea class="field-text__input" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="22" rows="11"></textarea>
+            <textarea class="field-text__input" name="message" placeholder="Можно прям в красках не стесняясь в выражениях"></textarea>
           </label>
         </fieldset>
         <button class="content__form-btn btn">Отправить форму</button>
@@ -132,6 +123,25 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content__success">
+      <div class="modal-content__desc">
+        <h2 class="modal-content__title">Ваша заявка отправлена</h2>
+        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="modal-content__btn-wrapper">
+        <button class="modal-content__btn modal-content__btn--success">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal-content__failure">
+      <div class="modal-content__desc">
+        <h2 class="modal-content__title">Что-то пошло не так!</h2>
+        <p>Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal-content__btn-wrapper">
+        <button class="modal-content__btn modal-content__btn--fail">ОК</button>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
     <script src="js/menu.js"></script>
   </body>
 </html>

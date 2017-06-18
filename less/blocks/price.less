@@ -13,6 +13,13 @@
     width: 560px;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .price {
+    svg {
+      top: -230px;
+    }
+  }
+}
 .price__table {
   border-collapse: collapse;
   transform: translateX(-260px);
@@ -27,12 +34,14 @@
     text-transform: uppercase;
     border: 2px solid #e5e5e5;
     .includes {
+      svg {
       position: absolute;
       top: 20px;
       left: 230px;
       display: block;
       width: 31px;
       height: 21px;
+      }
     }
     .non-includes {
       position: absolute;
@@ -79,7 +88,7 @@
 }
 .hit {
   position: relative;
-  background-image: url("/img/bg-hit.svg");
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: top left;
   &::before {
@@ -103,6 +112,13 @@
       width: 1000px;
     }
   }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .price {
+      svg {
+        top: -127px;
+      }
+    }
+  }
   .price__pagination {
     display: none;
   }
@@ -117,8 +133,10 @@
       font-size: 14px;
       text-transform: capitalize;
       .includes {
-        left: 64px;
-        top: 11px;
+        svg {
+          left: 64px;
+          top: 11px;
+        }
       }
       .non-includes {
         left: 64px;
@@ -150,7 +168,7 @@
     }
   }
   .hit {
-    background-image: url("/img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit-tablet.svg");
     &::before {
       top: 3px;
       left: 6px;
@@ -165,6 +183,13 @@
       width: 100%;
     }
   }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .price {
+      svg {
+        top: -175px;
+      }
+    }
+  }
   .price__table {
     margin: 0 auto;
     margin-top: 42px;
@@ -175,9 +200,12 @@
       width: 216px;
       font-size: 18px;
       background-color: #ffffff;
+      background-clip: padding-box;
       .includes {
-        left: 103px;
-        top: 22px;
+        svg {
+          left: 103px;
+          top: 22px;
+        }
       }
       .non-includes {
         left: 106px;
@@ -199,7 +227,7 @@
     }
   }
   .hit {
-    background-image: url("/img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
     &::before {
       top: 8px;
       left: 11px;

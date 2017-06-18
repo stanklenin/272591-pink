@@ -59,6 +59,7 @@
   height: 203px;
   text-align: center;
   overflow: hidden;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
   svg {
     position: absolute;
     top: 0px;
@@ -67,8 +68,12 @@
     fill: #ffffff;
     stroke: #ffffff;
   }
-  img {
-    transform: translateY(-120px);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .contacts__map {
+    svg {
+      top: -85px;
+    }
   }
 }
 @media (min-width: 660px) {
@@ -114,10 +119,12 @@
     svg {
       top: 0px;
     }
-    img {
-      width: 660px;
-      height: 373px;
-      transform: translateY(-20px);
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .contacts__map {
+      svg {
+        top: -155px;
+      }
     }
   }
 }
@@ -173,12 +180,14 @@
     width: 1200px;
     height: 502px;
     svg {
-      top: 20px;
+      top: 0px;
     }
-    img {
-      width: 1200px;
-      height: 502px;
-      transform: translateY(20px);
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .contacts__map {
+      svg {
+        top: -170px;
+      }
     }
   }
 }
