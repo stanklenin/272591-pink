@@ -13,7 +13,8 @@
   }
 }
 .post__filter-list {
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 21px;
   list-style: none;
 }
 .post__filter-item {
@@ -176,10 +177,12 @@
     border-bottom: 2px solid #dddfe0;
     &:first-child {
       margin: 0;
+      margin-top: -2px;
     }
     &:nth-child(2) {
       padding: 8px 0;
       margin: 0;
+      margin-top: -5px;
     }
     &:nth-child(3) {
       margin: 0;
@@ -189,22 +192,20 @@
 
   .post__filter-icon {
     display: inline-block;
+    fill: @red;
+    stroke: @red;
+    opacity: 1;
     transform: scale(0.5);
     &--crop {
       margin-top: 5px;
     }
     &--color {
-      margin-top: 8px;
+      margin-top: 11px;
     }
     &--contrast {
-      margin-top: -1px;
+      margin-top: -4px;
       margin-left: 8px;
     }
-  }
-  .post__filter-icon--active {
-    fill: #8d949b;
-    stroke: #8d949b;
-    opacity: 0.4;
   }
   .post__filter-scale {
     display: inline-block;
@@ -222,12 +223,12 @@
     }
     &--color {
       .post__filter-bar {
-        margin-top: -25px;
+        margin-top: -28px;
         margin-left: 11px;
       }
       .post__filter-toggle {
-        top: -33px;
-        left: 33px;
+        top: -37px;
+        left: 35px;
       }
     }
     &--contrast {
@@ -304,11 +305,6 @@
       }
     }
   }
-  .post__filter-icon--active {
-    fill: #8d949b;
-    stroke: #8d949b;
-    opacity: 0.4;
-  }
   .post__filter-bar {
     width: 288px;
   }
@@ -329,12 +325,13 @@
         margin-left: 0px;
       }
       .post__filter-toggle {
-        top: -34px;
+        top: -38px;
         left: 243px;
       }
     }
     &--contrast {
       .post__filter-bar {
+        margin-top: -20px;
         margin-left: 0px;
         height: 1.5px;
       }
