@@ -459,6 +459,7 @@
       order: 4;
       margin: 0 auto;
       margin-bottom: 60px;
+      max-height: 555px;
     }
     &:nth-child(4) {
       order: 3;
@@ -467,9 +468,9 @@
     &:nth-child(5) {
       order: 2;
       margin: 0 auto;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
       padding: 0;
-      max-height: 305px;
+      max-height: 300px;
     }
     &:nth-child(6) {
       order: 5;
@@ -537,16 +538,14 @@
   .field-name--radio,
   .field-name--checkbox {
     padding: 0 22px;
-    margin-bottom: -51px;
+    margin-bottom: 0px;
     transform: translateY(0);
   }
   .field-radio {
     margin-left: 120px;
     margin-bottom: 45px;
+    transform: translateY(-50px);
     text-align: left;
-    &:last-child {
-      margin-bottom: 65px;
-    }
   }
   .field-name--contacts {
     display: block;
@@ -607,9 +606,7 @@
   .field-checkbox {
     margin-left: 120px;
     text-align: left;
-    &:last-child {
-      margin-bottom: 50px;
-    }
+    transform: translateY(-50px);
   }
   .field-text--wide {
     .field-text__input {
@@ -922,8 +919,8 @@
       margin-top: -1px;
       margin-left: 10px;
       margin-right: 10px;
-      margin-bottom: 59px;
-      padding-bottom: 5px;
+      margin-bottom: 56px;
+      max-height: 235px;
       .field-wrapper {
         flex-direction: row;
         justify-content: flex-start;
