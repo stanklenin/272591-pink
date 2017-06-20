@@ -2,10 +2,14 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 116px;
+  padding-bottom: 50px;
   position: relative;
   width: 320px;
   overflow: hidden;
   background-color: #f2f2f2;
+  background-image: url("/img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -4%;
   svg {
     position: absolute;
     top: 0px;
@@ -79,12 +83,13 @@
   }
 }
 .price__pagination {
-  margin-top: 35px;
-  margin-left: 91px;
-  margin-bottom: 45px;
-  .slider__pagination-item {
-    margin-right: 14px;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0;
+  width: 80px;
 }
 .hit {
   position: relative;

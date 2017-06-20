@@ -1,15 +1,20 @@
 .reviews {
   margin: 0 auto;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
   width: 320px;
+}
+.reviews__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .reviews__item {
   margin: 0;
-  padding-top: 38px;
+  padding: 0;
   text-align: center;
   p {
     margin-top: 11px;
-    padding: 0 20px;
     font-family: @main-font;
     font-size: 14px;
     line-height: 30px;
@@ -29,6 +34,14 @@
   display: none;
 }
 .slider__pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 0;
+  width: 80px;
   list-style: none;
 }
 .slider__pagination-item {
@@ -50,13 +63,6 @@
     height: 5px;
     background-color: #ffffff;
     border: 3px solid @darkblue;
-  }
-}
-.reviews__pagination {
-  margin-top: 30px;
-  margin-left: 90px;
-  .slider__pagination-item {
-    margin-right: 14px;
   }
 }
 .reviews__btn {

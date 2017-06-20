@@ -1,10 +1,11 @@
 .contacts {
   margin: 0 auto;
   padding: 0;
-  padding-top: 25px;
   width: 320px;
 }
 .contacts__slogan {
+  margin-top: 40px;
+  margin-bottom: 35px;
   font-family: @main-font;
   font-size: 24px;
   line-height: 28px;
@@ -13,11 +14,8 @@
   color: @darkblue;
 }
 .contacts__info {
-  padding-top: 14px;
-  text-align: center;
-}
-.contacts__info {
   margin-bottom: 50px;
+  text-align: center;
   b {
     font-family: @main-font;
     font-size: 18px;
@@ -34,11 +32,14 @@
   }
 }
 .contacts__phone {
+  margin: 0 auto;
   margin-bottom: 22px;
+  width: 215px;
 }
 .contacts__mail {
+  margin: 0 auto;
   margin-bottom: 27px;
-  padding-left: 5px;
+  width: 245px;
   span:hover {
     text-decoration: underline;
     color: @darkblue;
@@ -52,29 +53,16 @@
   }
 }
 .contacts__address {
-  padding: 0 20px;
+  margin: 0 auto;
+  width: 225px;
 }
 .contacts__map {
-  position: relative;
   height: 203px;
   text-align: center;
   overflow: hidden;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
-  svg {
-    position: absolute;
-    top: 0px;
-    z-index: 5;
-    width: 100%;
-    fill: #ffffff;
-    stroke: #ffffff;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .contacts__map {
-    svg {
-      top: -85px;
-    }
-  }
+  background-image:url("/img/bg-triangle-white-footer.svg"), url("/img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center -20%, center;
 }
 @media (min-width: 660px) {
   .contacts {
