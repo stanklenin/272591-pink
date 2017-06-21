@@ -24,7 +24,8 @@
   background-position: center 255px;
 }
 .main-nav__logo {
-  position: relative;
+  display: flex;
+  justify-content: space-around;
   padding: 20px;
   height: 28px;
   border-bottom: 1px solid #000000;
@@ -73,9 +74,7 @@
   }
 }
 .main-nav__toggler {
-  position: absolute;
-  left: 278px;
-  top: 21px;
+  margin-left: auto;
   display: block;
   fill: #ffffff;
   stroke: #ffffff;
@@ -89,9 +88,7 @@
   }
 }
 .main-nav__burger {
-  position: absolute;
-  left: 252px;
-  top: 21px;
+  margin-left: auto;
   display: block;
   fill: #ffffff;
   stroke: #ffffff;
@@ -106,11 +103,14 @@
 }
 .page-header__desc {
   display: inline-block;
+  padding: 0;
   width: 100%;
   height: 171px;
   h1 {
+    margin: 0 auto;
     margin-top: 31px;
-    padding: 0 40px;
+    padding: 0;
+    width: 195px;
     font-family: @main-font;
     line-height: 30px;
     font-size: 24px;
