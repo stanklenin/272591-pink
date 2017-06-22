@@ -6,7 +6,6 @@
 }
 .content__form-desc {
   margin: 0;
-  margin-bottom: 33px;
   padding: 0 20px;
   padding-top: 45px;
   font-family: @main-font;
@@ -19,9 +18,8 @@
   }
 }
 .content__form-inner {
-  padding: 0 20px;
+  margin: 0;
   border: none;
-  width: 280px;
   .field-text {
     span {
       margin-left: 20px;
@@ -32,17 +30,11 @@
       color: @red;
     }
   }
-  &:nth-of-type(4) {
-    margin-bottom: 40px;
-  }
 }
 .field-text__input {
-  margin-top: 7px;
-  margin-bottom: 19px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 85px;
+  padding-top: 22px;
   padding-bottom: 22px;
+  width: 100%;
   border: 2px solid #e5e5e5;
 }
 .field-text__input:hover {
@@ -52,32 +44,58 @@
   border-color: @red;
 }
 .content__form-inner--initials {
-  margin-bottom: 6px;
+  margin: 0;
+  padding: 35px 20px;
+  padding-bottom: 30px;
+  .content__form-block {
+    margin-bottom: 17px;
+    &:last-child {
+      margin: 0;
+      padding: 0;
+    }
+  }
   .field-text__input {
-    min-width: 170px;
+    box-sizing: border-box;
+  }
+  .field-text {
+    margin: 0;
+    padding: 0;
+    span {
+      line-height: 35px;
+    }
+  }
+}
+.content__form-contacts-block {
+  margin-bottom: 22px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 .content__form-inner--contacts {
-  margin-bottom: 6px;
+  padding-top: 32px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 29px;
   .field-text__input {
-    margin-bottom: 16px;
-    min-width: 170px;
+    box-sizing: border-box;
   }
 }
-.field-text__input--last {
-  margin-bottom: 20px;
-}
 .content__form-inner--grey {
-  width: 320px;
   margin: 0;
   padding: 0;
-  margin-bottom: 33px;
   background-color: #f2f2f2;
   .field-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
+  }
+}
+.content__form-inner--checkbox {
+  .field-wrapper {
+    padding-top: 96px;
+    padding-left: 90px;
+    padding-bottom: 52px;
   }
 }
 .field-name {
@@ -98,17 +116,13 @@
 }
 .field-checkbox {
   margin-bottom: 52px;
-  margin-left: 90px;
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: @darkblue;
-  &:first-of-type {
-    margin-top: 100px;
-  }
-  &:last-of-type {
-    margin-bottom: 46px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 .field-checkbox__input {
@@ -170,46 +184,78 @@
 .field-radio__input + .field-radio:active::before {
   border-color: @red;
 }
+.content__form-inner--radio {
+  .field-wrapper {
+    padding-top: 95px;
+    padding-left: 90px;
+    padding-bottom: 45px;
+  }
+}
 .field-radio {
-  margin-left: 90px;
   margin-bottom: 45px;
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: @darkblue;
-  &:first-of-type {
-    margin-top: 98px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 .field-radio__input {
   display: none;
 }
 .field-name--radio {
-  transform: translateY(59px);
+  transform: translateY(54px);
   padding-left: 17px;
   padding-right: 20px;
 }
-.field-text--wide {
-  textarea {
-    margin-top: 15px;
-    margin-bottom: 45px;
-    padding: 0;
-    padding-top: 15px;
-    padding-left: 17px;
-    width: 259px;
-    height: 182px;
-    resize: none;
+.content__form-inner {
+  &:last-of-type {
+    margin: 0;
+    padding: 55px 20px;
+    padding-bottom: 45px;
   }
 }
+.field-text--wide {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  &::after {
+    content: "Можно прям в красках не стесняясь в выражениях";
+    position: absolute;
+    top: -189px;
+    left: 20px;
+    width: 250px;
+    height: 100px;
+    font-family: @main-font;
+    font-size: 18px;
+    line-height: 30px;
+    color: @darkblue;
+  }
+}
+.field-text__input--textarea {
+  margin: 0;
+  padding: 0;
+  width: 275px;
+  height: 195px;
+  resize: none;
+}
+.field-text__input--textarea:focus + .field-text--wide::after {
+  display: none;
+}
 .field-name--textarea {
+  margin: 0;
   padding-left: 17px;
   padding-right: 20px;
+  transform: translateY(40px);
 }
 .content__form-btn {
-  margin-left: 17px;
-  margin-bottom: 22px;
-  padding: 15px 46px;
+  margin: 0 auto;
+  padding: 15px 0px;
+  display: block;
+  width: 278px;
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
@@ -226,7 +272,11 @@
   }
 }
 .content__form-footnote {
-  margin-left: 68px;
+  margin: 0 auto;
+  padding-top: 34px;
+  padding-bottom: 14px;
+  display: block;
+  width: 185px;
   font-family: @main-font;
   font-size: 14px;
   line-height: 30px;
@@ -243,24 +293,28 @@
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
+  text-indent: 18px;
   color: @darkblue;
 }
 ::-moz-placeholder {
   font-family: @main-font;
   font-size: 18px;
   line-height: 20px;
+  text-indent: 18px;
   color: @darkblue;
 }
 :-moz-placeholder {
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
+  text-indent: 18px;
   color: @darkblue;
 }
 :-ms-input-placeholder {
   font-family: @main-font;
   font-size: 18px;
   line-height: 30px;
+  text-indent: 18px;
   color: @darkblue;
 }
 /*photo.html*/

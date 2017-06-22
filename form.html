@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="main-wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo">
@@ -46,17 +47,23 @@
       <form class="content__form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="content__form-desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span>Пожалуйста, заполните форму ниже:</span></p>
         <fieldset class="content__form-inner content__form-inner--initials">
-          <label class="field-text"><span>Фамилия</span>
-            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *">
-          </label>
-          <label class="field-text"><span>Имя</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
-          </label>
-          <label class="field-text"><span>Отчество</span>
-            <input class="field-text__input field-text__input--last" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-          </label>
+          <div class="content__form-block">
+            <label class="field-text"><span>Фамилия</span>
+              <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *">
+            </label>
+          </div>
+          <div class="content__form-block">
+            <label class="field-text"><span>Имя</span>
+              <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
+            </label>
+          </div>
+          <div class="content__form-block">
+            <label class="field-text"><span>Отчество</span>
+              <input class="field-text__input field-text__input--last" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="content__form-inner content__form-inner--grey">
+        <fieldset class="content__form-inner content__form-inner--grey content__form-inner--checkbox">
           <legend align="center" class="field-name field-name--checkbox">Ваши безбашенные достижения в путешествии</legend>
           <div class="field-wrapper">
             <input class="field-checkbox__input" type="checkbox" name="achievements" id="selfie" checked>
@@ -76,15 +83,19 @@
         <fieldset class="content__form-inner content__form-inner--contacts">
           <legend align="center" class="field-name field-name--contacts">Контактная информация</legend>
           <div class="field-wrapper">
-            <label class="field-text"><span>Номер телефона</span>
-              <input class="field-text__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="field-text"><span>Адрес почты</span>
-              <input class="field-text__input field-text__input--last" type="email" name="mail" placeholder="Введите почту *">
-            </label>
+            <div class="content__form-contacts-block">
+              <label class="field-text"><span>Номер телефона</span>
+                <input class="field-text__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </label>
+            </div>
+            <div class="content__form-contacts-block">
+              <label class="field-text"><span>Адрес почты</span>
+                <input class="field-text__input" type="email" name="mail" placeholder="Введите почту *">
+              </label>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="content__form-inner content__form-inner--grey">
+        <fieldset class="content__form-inner content__form-inner--grey content__form-inner--radio">
           <legend align="center" class="field-name field-name--radio">С каким приложением путешествовали?</legend>
           <div class="field-wrapper">
             <input class="field-radio__input" type="radio" name="os" value="ios" id="ios" checked>
@@ -97,9 +108,8 @@
         </fieldset>
         <fieldset class="content__form-inner">
           <legend align="center" class="field-name field-name--textarea">Опишите свои эмоции</legend>
-          <label class="field-text field-text--wide">
-            <textarea class="field-text__input" name="message" placeholder="Можно прям в красках не стесняясь в выражениях"></textarea>
-          </label>
+          <textarea class="field-text__input field-text__input--textarea" name="message" id="message"></textarea>
+          <label for="message" class="field-text field-text--wide"></label>
         </fieldset>
         <button class="content__form-btn btn">Отправить форму</button>
         <p class="content__form-footnote"><span>*</span> — обязательные <span class="hidden-text">для заполнения</span> поля</p>
@@ -123,6 +133,7 @@
         </div>
       </div>
     </footer>
+    </div>
     <div class="modal-content__success">
       <div class="modal-content__desc">
         <h2 class="modal-content__title">Ваша заявка отправлена</h2>
